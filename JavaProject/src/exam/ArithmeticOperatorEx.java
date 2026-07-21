@@ -31,6 +31,7 @@ public class ArithmeticOperatorEx {
 		
 		sc.close();
 
+		// 결과값 산출 시 Overflow 주의
 	}
 
 }
