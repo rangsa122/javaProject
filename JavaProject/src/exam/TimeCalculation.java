@@ -1,10 +1,26 @@
 package exam;
 
+import java.util.Scanner;
+
 public class TimeCalculation {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("시간 입력 (초) : ");
+		int time = sc.nextInt();
+		
+		int hour = time / 3600;		
+		
+		int minute = (time % 3600) / 60;
+		
+		int second = time % 60;
+		
+		System.out.print(time + "초는 " + hour + "시간, " + minute + "분, " + second + "초입니다.");
+
+		sc.close();
+		
 	}
 
 }
