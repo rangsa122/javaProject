@@ -2,19 +2,18 @@ package exam;
 
 import java.util.Scanner;
 
-public class IfElseEx1 {
+public class ForEx2 {
 
 	public static void main(String[] args) {
-
+		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("정수 입력 : ");
+		System.out.print("단 수 입력 : ");
 		int num = sc.nextInt();
 		
-		if(num % 2 == 0)
-			System.out.println("짝수");
-		else
-			System.out.println("홀수");
+		for(int i = 1; i < 10; i++) {
+			System.out.println(num + "x" + i + "=" + (int)(num * i));
+		}
 
 		sc.close();
 		

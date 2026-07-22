@@ -25,6 +25,8 @@ public class MultipleIfElseEx {
 		
 		System.out.print("가장 큰 수 : " + max);
 
+		sc.close();
+		
 	}
 
 }

@@ -73,6 +73,8 @@ public class ControlEx {
 			
 		} else 
 			System.out.println("잘못 입력하였습니다. 프로그램을 종료합니다.");
+		
+		sc.close();
 	}
 
 }

@@ -40,6 +40,20 @@ public class Switch {
 				System.out.println("잘못 입력하였습니다.");
 	}
 		
+		char grade = 'C';
+		switch(grade) { 
+			case 'A' :
+			case 'B' :
+				System.out.println("참 잘했어요"); break;
+			case 'C' :
+			case 'D' :
+				System.out.println("좀 더 노력하세요"); break;
+			case 'F' :
+				System.out.println("재수강입니다"); break;
+			default : 
+				System.out.println("잘못된 학점입니다"); 
+		}
+		
 		sc.close();
 		
 	}
