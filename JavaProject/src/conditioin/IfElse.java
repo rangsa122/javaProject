@@ -38,6 +38,21 @@ public class IfElse {
 		
 		System.out.println("성적 : " + grade);
 		
+		// 중첩 if 
+		score = sc.nextInt();
+		String grade1;
+		if(score >= 90) {
+			if(score >= 95)
+				grade1 = "A+";
+			else
+				grade1 = "A";
+		}else {
+			if(score >= 85)
+				grade1 = "B+";
+			else
+				grade1 = "B";
+		}
+		
 		sc.close();
 
 	}
