@@ -2,26 +2,27 @@ package exam;
 
 import java.util.Scanner;
 
-public class ForEx5 {
+public class WhileEx2 {
 
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		int sum = 0;
-		
 		System.out.print("학생 수 입력 : ");
 		int stuNum = sc.nextInt();
+		int i = 1, sum = 0;
 		
-		for(int i = 1; i <= stuNum; i++) {
+		while(i <= stuNum) {
 			System.out.print("학생" + i + " 점수 입력 : ");
 			int score = sc.nextInt();
 			sum += score;
+			
+			i++;
 		}
 		
 		System.out.println("평균 : " + ((float)sum/stuNum));
 		
 		sc.close();
-		
+
 	}
 
 }
