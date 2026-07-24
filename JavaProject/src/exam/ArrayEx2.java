@@ -14,11 +14,11 @@ public class ArrayEx2 {
 			
 			for(int j = 0; j < i; j++) {
 				if(num[i] == num[j]) {
-					num[i] = rd.nextInt(45) + 1;
+					i--;
 					break;
 				} 
 			}
-			System.out.println(num[i]);
+			System.out.print(num[i] + " ");
 		}
 		
 	}
